@@ -1,7 +1,7 @@
 import { db } from './firebase';
 
 // Candidates API
-const candidatesCollection = db.collection('candidates');
+export const candidatesCollection = db.collection('candidates');
 
 export const updateCandidate = (id, field) =>
   candidatesCollection
