@@ -26,8 +26,11 @@ class Candidates extends Component {
       currentList = this.state.candidates;
       newList = currentList.filter(candidate => {
         const lowerCaseName = candidate.full_name.toLowerCase();
+        const lowerCaseEmail = candidate.email.toLowerCase();
         const filter = event.target.value.toLowerCase();
-        return lowerCaseName.includes(filter);
+        return (
+          lowerCaseName.includes(filter) || lowerCaseEmail.includes(filter)
+        );
       });
     } else {
       newList = this.state.candidates;
