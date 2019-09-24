@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import { candidatesCollection } from '../firebase/db';
 import CandidateItem from './CandidateItem';
+import TextField from '@material-ui/core/TextField';
+
+import './Candidates.css';
 
 class Candidates extends Component {
   constructor(props) {
@@ -48,13 +51,18 @@ class Candidates extends Component {
     ));
     return (
       <div>
-        <input
-          type="text"
-          className="input"
-          onChange={this.handleChange}
-          placeholder="Search..."
-        />
-        <span>{this.items}</span>
+        <div className="container">
+          <TextField
+            type="text"
+            className="input"
+            onChange={this.handleChange}
+            placeholder="Search..."
+          />
+        </div>
+        <div className="results">
+          <h2>List of Filtered Candidates</h2>
+          <span>{this.items}</span>
+        </div>
       </div>
     );
   }

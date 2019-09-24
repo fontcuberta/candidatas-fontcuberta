@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import withAuthorization from '../auth/withAuthorization';
 import Candidates from '../Candidates';
+import { makeStyles } from '@material-ui/core/styles';
 
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
