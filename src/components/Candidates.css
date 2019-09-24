@@ -10,7 +10,10 @@
 }
 .results {
     margin: 3%;
-    background-color: ghostwhite;
     align-self: center;
     width: 60%;
+}
+
+h2 {
+    color: #303aa5;
 }

@@ -63,7 +63,7 @@ class Candidates extends Component {
           />
         </div>
         <div className="results">
-          <h2>List of Filtered Candidates</h2>
+          <h2>These are our Adalab's Candidates</h2>
           <span>{this.items}</span>
         </div>
       </div>

@@ -11,6 +11,7 @@
   margin-right: auto;
 }
 
-.form .button--submit {
-  margin-top: 32px;
+button.button--submit {
+  margin: 10px;
 }
+

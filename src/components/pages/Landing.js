@@ -10,7 +10,7 @@ const Landing = ({ children }) => (
       <h1>Candidatas Adalab</h1>
       <p>Realiza aquí el proceso de selección para entrar en Adalab.</p>
     </header>
-    <main className="grow layout">{children}</main>
+    <main className="block grow layout">{children}</main>
     <footer className="Landing-footer">
       <img src={logo} className="Landing-logo" alt="logo de Adalab" />
     </footer>

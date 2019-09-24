@@ -37,7 +37,7 @@ const SignInForm = ({ history }) => {
   const isInvalid = password === '' || email === '';
 
   return (
-    <form className="form container">
+    <form className="">
       <TextField
         fullWidth
         label="Email"
